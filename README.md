@@ -24,8 +24,9 @@ Dentro da pasta principal execute o seguinte arquivo para executar o teste de in
 run_tests.bat
   ```
 
-  Ou vá até a pasta \src\OutseraMovies.Tests e no terminal execute o comando:
+  Ou vá até a pasta \src\OutseraMovies.Tests e no terminal execute os comandos:
 ```bash
+dotnet restore
 dotnet test
   ```
 
