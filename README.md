@@ -53,7 +53,7 @@ dotnet run --urls "http://localhost:5001"
   ```
 
 #### Health Check:
-A API possuí um endpoint para verificação de saúde da aplicação:
+A API possui um endpoint para verificação de saúde da aplicação:
   ```bash
   http://localhost:5001/health
   ```
