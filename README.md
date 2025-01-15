@@ -11,7 +11,7 @@
 
 ### 2. Configura o arquivo appsettings.json
 O arquivo appsettings.json se encontra dentro da pasta \src\OutseraMovies.WebAPI\
-Valide os de configuração do arquivo csv:
+Valide a configuração do arquivo csv:
   ```bash
   "CsvFileSettings": {
     "FilePath": "movielist.csv",
@@ -24,8 +24,9 @@ Dentro da pasta principal execute o seguinte arquivo para executar o teste de in
 run_tests.bat
   ```
 
-  Ou vá até a pasta \src\OutseraMovies.Tests e no terminal execute o comando:
+  Ou vá até a pasta \src\OutseraMovies.Tests e no terminal execute os comandos:
 ```bash
+dotnet restore
 dotnet test
   ```
 
@@ -53,7 +54,7 @@ dotnet run --urls "http://localhost:5001"
   ```
 
 #### Health Check:
-A API possuí um endpoint para verificação de saúde da aplicação:
+A API possui um endpoint para verificação de saúde da aplicação:
   ```bash
   http://localhost:5001/health
   ```
