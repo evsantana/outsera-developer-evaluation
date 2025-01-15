@@ -1,0 +1,6 @@
+@OutseraMovies.WebAPI_HostAddress = http://localhost:5161
+
+GET {{OutseraMovies.WebAPI_HostAddress}}/api/movie/
+Accept: application/json
+
+###
