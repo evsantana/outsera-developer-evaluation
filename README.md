@@ -11,7 +11,7 @@
 
 ### 2. Configura o arquivo appsettings.json
 O arquivo appsettings.json se encontra dentro da pasta \src\OutseraMovies.WebAPI\
-Valide os de configuração do arquivo csv:
+Valide a configuração do arquivo csv:
   ```bash
   "CsvFileSettings": {
     "FilePath": "movielist.csv",
