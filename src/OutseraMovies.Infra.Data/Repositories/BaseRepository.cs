@@ -60,7 +60,7 @@ namespace OutseraMovies.Infra.Data.Repositories
         /// <returns>The entity if found, null otherwise</returns>
         public async Task<T> GetByIdAsync(int Id, CancellationToken cancellationToken)
         {
-            return await _context.Set<T>().FirstOrDefaultAsync(x => x.Id == Id, cancellationToken);
+            return await _context.Set<T>().AsNoTracking().FirstOrDefaultAsync(x => x.Id == Id, cancellationToken);
         }
 
         /// <summary>
