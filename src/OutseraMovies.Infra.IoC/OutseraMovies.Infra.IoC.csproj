@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Modules\InfrastructureModuleInitializer.cs\**" />
+    <EmbeddedResource Remove="Modules\InfrastructureModuleInitializer.cs\**" />
+    <None Remove="Modules\InfrastructureModuleInitializer.cs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OutseraMovies.Application\OutseraMovies.Application.csproj" />
+    <ProjectReference Include="..\OutseraMovies.Domain\OutseraMovies.Domain.csproj" />
+    <ProjectReference Include="..\OutseraMovies.Infra.Data\OutseraMovies.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
